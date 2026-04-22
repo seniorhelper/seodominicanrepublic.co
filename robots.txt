@@ -1,0 +1,53 @@
+# robots.txt — seodominicanrepublic.com
+# Managed by Eye To Ad Media | sales@eyetoad.com
+
+# ── Standard Search Engines ──
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# ── AI / LLM Crawlers — explicitly allowed for AIO indexing ──
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# ── Global fallback ──
+User-agent: *
+Allow: /
+
+# ── Sitemap ──
+Sitemap: https://www.seodominicanrepublic.com/sitemap.xml
