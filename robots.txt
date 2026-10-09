@@ -1,5 +1,5 @@
 # robots.txt — seodominicanrepublic.com
-# Managed by Eye To Ad Media | sales@eyetoad.com
+# Managed by Eye To Ad Media
 
 # ── Standard Search Engines ──
 User-agent: Googlebot
