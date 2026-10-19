@@ -50,4 +50,4 @@ User-agent: *
 Allow: /
 
 # ── Sitemap ──
-Sitemap: https://www.seodominicanrepublic.com/sitemap.xml
+Sitemap: https://seodominicanrepublic.com/sitemap.xml

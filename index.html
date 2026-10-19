@@ -8,7 +8,7 @@
   <title>SEO Dominican Republic | Digital Marketing Agency DR | Eye To Ad Media</title>
   <meta name="description" content="Dominican Republic's premier SEO and digital marketing agency. We rank DR businesses at the top of Google. Tourism, real estate, hospitality & local businesses. Get found. Get clients." />
   <meta name="keywords" content="SEO Dominican Republic, digital marketing Dominican Republic, DR SEO agency, Dominican Republic marketing agency, search engine optimization DR, Google ranking Dominican Republic, tourism SEO DR, real estate marketing Dominican Republic, AIO Dominican Republic, ChatGPT optimization DR, agencia SEO República Dominicana, posicionamiento Google República Dominicana" />
-  <link rel="canonical" href="https://www.seodominicanrepublic.com/" />
+  <link rel="canonical" href="https://seodominicanrepublic.com/" />
 
   <!-- AIO / AGENTIC SEO META -->
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -28,7 +28,7 @@
   <meta property="og:title" content="SEO Dominican Republic | Digital Marketing That Gets Results" />
   <meta property="og:description" content="We put Dominican Republic businesses at the top of Google. Tourism, real estate, hospitality, and local brands. Powered by Eye To Ad Media." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.seodominicanrepublic.com/" />
+  <meta property="og:url" content="https://seodominicanrepublic.com/" />
   <meta property="og:image" content="https://raw.githubusercontent.com/seniorhelper/seodominicanrepublic.co/main/images/dr-seo-agency.jpg" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="es_DO" />
@@ -41,9 +41,8 @@
   <meta name="twitter:image" content="https://raw.githubusercontent.com/seniorhelper/seodominicanrepublic.co/main/images/dr-seo-agency.jpg" />
 
   <!-- HREFLANG -->
-  <link rel="alternate" hreflang="x-default" href="https://www.seodominicanrepublic.com/" />
-  <link rel="alternate" hreflang="en" href="https://www.seodominicanrepublic.com/" />
-  <link rel="alternate" hreflang="es" href="https://www.seodominicanrepublic.com/es/" />
+  <link rel="alternate" hreflang="x-default" href="https://seodominicanrepublic.com/" />
+  <link rel="alternate" hreflang="en" href="https://seodominicanrepublic.com/" />
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 
   <!-- FAVICON -->
@@ -1176,6 +1175,19 @@
       .stats-bar-inner { grid-template-columns: 1fr 1fr; }
       .stat-item strong { font-size: 1.8rem; }
     }
+  
+    /* ── MOBILE MENU (tap to open) ── */
+    .mm-btn{display:none}
+    .mm-panel{display:none}
+    @media (max-width: 768px) {
+      .mm-btn{display:inline-flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:44px;height:44px;padding:0;margin-left:4px;background:none;border:0;cursor:pointer;color:#1a2540;flex-shrink:0;-webkit-tap-highlight-color:transparent}
+      .mm-btn span{display:block;width:24px;height:2px;background:currentColor;border-radius:2px;transition:transform .2s,opacity .2s}
+      .mm-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+      .mm-btn[aria-expanded="true"] span:nth-child(2){opacity:0}
+      .mm-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+      .mm-panel.open{display:block;position:fixed;left:0;right:0;z-index:1001;background:#ffffff;box-shadow:0 14px 28px rgba(0,0,0,.18);max-height:calc(100vh - 110px);overflow-y:auto}
+      .mm-panel a{display:block;padding:15px 20px;font-weight:600;font-size:16px;line-height:1.3;text-decoration:none;color:#1a2540;border-top:1px solid rgba(26,37,64,.08)}
+    }
   </style>
 </head>
 <body>
@@ -1205,8 +1217,17 @@
       <a href="#provinces" data-en="Coverage" data-es="Cobertura">Coverage</a>
       <a href="#faq">FAQ</a>
       <a href="#contact-bottom" class="eml header-cta" data-en="Get a Free Audit" data-es="Auditoría Gratis" data-a="aW5mbw==" data-b="ZXlldG9hZC5jb20=" data-s="SEO Dominican Republic Inquiry">Get a Free Audit</a>
+    
+      <button type="button" class="mm-btn" id="mm-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mm-panel"><span></span><span></span><span></span></button>
     </nav>
   </header>
+  <nav class="mm-panel" id="mm-panel" aria-label="Mobile menu">
+    <a href="#services" data-en="Services" data-es="Servicios">Services</a>
+    <a href="#keyword-domains" data-en="Keyword Domains" data-es="Dominios Clave">Keyword Domains</a>
+    <a href="#provinces" data-en="Coverage" data-es="Cobertura">Coverage</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+
 
   <!-- ═══════════════════════════════════ -->
   <!-- HERO — VIDEO BACKGROUND           -->
@@ -1728,7 +1749,7 @@
         <h2 data-en="The Landscape That <span class='accent'>Drives Our Strategy</span>" data-es="El Panorama Que <span class='accent'>Impulsa Nuestra Estrategia</span>">The Landscape That <span class="accent">Drives Our Strategy</span></h2>
       </div>
       <div class="infographic-wrap fade-in">
-        <img src="images/dominican-republic-search-engine-optimization-infographic.png" alt="Dominican Republic SEO and Digital Marketing Strategy Infographic" loading="lazy" />
+        <img src="images/domincan-republic-search-engine-optimization-infographic.png" alt="Dominican Republic SEO and Digital Marketing Strategy Infographic" loading="lazy" />
       </div>
       <p class="infographic-caption" data-en="Dominican Republic Search Engine Optimization — Strategy Overview" data-es="Optimización para Motores de Búsqueda en República Dominicana — Resumen de Estrategia">Dominican Republic Search Engine Optimization — Strategy Overview</p>
 
@@ -2041,11 +2062,11 @@
     "@graph": [
       {
         "@type": "ProfessionalService",
-        "@id": "https://www.seodominicanrepublic.com/#business",
+        "@id": "https://seodominicanrepublic.com/#business",
         "name": "SEO Dominican Republic — Eye To Ad Media",
         "alternateName": ["Eye To Ad Media DR", "SEO RD", "Dominican Republic Digital Marketing Agency"],
         "description": "Dominican Republic's premier SEO and digital marketing agency. We specialize in ranking DR businesses at the top of Google and in AI search tools for tourism, real estate, hospitality, and local service keywords across all 32 provinces.",
-        "url": "https://www.seodominicanrepublic.com/",
+        "url": "https://seodominicanrepublic.com/",
         "email": "info@eyetoad.com",
         "knowsLanguage": ["en", "es"],
         "geo": {
@@ -2074,15 +2095,15 @@
       },
       {
         "@type": "WebSite",
-        "@id": "https://www.seodominicanrepublic.com/#website",
+        "@id": "https://seodominicanrepublic.com/#website",
         "name": "SEO Dominican Republic",
-        "url": "https://www.seodominicanrepublic.com/",
+        "url": "https://seodominicanrepublic.com/",
         "inLanguage": ["en","es"],
-        "publisher": {"@id": "https://www.seodominicanrepublic.com/#business"}
+        "publisher": {"@id": "https://seodominicanrepublic.com/#business"}
       },
       {
         "@type": "BreadcrumbList",
-        "itemListElement": [{"@type":"ListItem","position":1,"name":"Home","item":"https://www.seodominicanrepublic.com/"}]
+        "itemListElement": [{"@type":"ListItem","position":1,"name":"Home","item":"https://seodominicanrepublic.com/"}]
       },
       {
         "@type": "Speakable",
@@ -2514,6 +2535,11 @@ function fill(){document.querySelectorAll('a.eml:not([data-ok])').forEach(functi
 document.querySelectorAll('.eml-t:not([data-ok])').forEach(function(t){t.textContent=ad(t);t.setAttribute('data-ok','1');});}
 function go(){fill();new MutationObserver(fill).observe(document.body,{childList:true,subtree:true});}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();})();
+</script>
+
+<script>
+/* mobile menu: tap to open, closes on link tap, Escape or resize to desktop */
+(function(){var b=document.getElementById('mm-btn'),p=document.getElementById('mm-panel'),h=document.querySelector('header');if(!b||!p||!h)return;function set(o){b.setAttribute('aria-expanded',o?'true':'false');b.setAttribute('aria-label',o?'Close menu':'Open menu');p.classList.toggle('open',o);if(o)p.style.top=Math.max(0,h.getBoundingClientRect().bottom)+'px';}b.addEventListener('click',function(){set(b.getAttribute('aria-expanded')!=='true');});p.addEventListener('click',function(e){if(e.target.closest('a'))set(false);});document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false);});window.addEventListener('resize',function(){if(window.innerWidth>768)set(false);});window.addEventListener('scroll',function(){if(p.classList.contains('open'))p.style.top=Math.max(0,h.getBoundingClientRect().bottom)+'px';},{passive:true});})();
 </script>
 </body>
 </html>
