@@ -30,7 +30,7 @@ a{color:var(--accent2)}
 header.top{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 4px 18px rgba(0,0,0,.05)}
 .hin{max-width:1120px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .logo{display:flex;align-items:center;text-decoration:none;color:var(--ink);font-family:var(--head);font-weight:800;font-size:20px;white-space:nowrap;min-width:0}
-.logo img{display:block;height:auto;max-width:200px}
+.logo img{display:block;height:auto;width:280px;max-width:none}
 .hnav{display:flex;align-items:center;gap:22px}
 .hnav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:15px}
 .hnav a:hover{color:var(--accent2)}
@@ -46,7 +46,12 @@ header.top{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px so
  .mm-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
  .mm-panel.open{display:block;position:fixed;left:0;right:0;z-index:60;background:#fff;box-shadow:0 14px 28px rgba(0,0,0,.16);max-height:calc(100vh - 90px);overflow-y:auto}
  .mm-panel a{display:block;padding:15px 20px;font-weight:600;font-size:16px;color:var(--ink);text-decoration:none;border-top:1px solid var(--line)}
- .logo img{max-width:150px}
+ .logo img{width:200px}
+ .hin{flex-wrap:wrap}
+ .hnav{display:contents}
+ .logo{order:1}
+ .mm-btn{order:2;margin-left:auto}
+ .hcall{order:3;flex:1 1 100%;text-align:center;padding:9px 12px !important;font-size:15px !important}
  .hin{gap:8px;padding:8px 14px}
  .hcall{padding:8px 11px;font-size:13px !important}
  .logo{font-size:17px}
@@ -97,7 +102,7 @@ footer a{color:var(--soft)}
 <div class="strip" aria-hidden="true"></div>
 <header class="top">
   <div class="hin">
-    <a class="logo" href="/" aria-label="SEO Dominican Republic"><img src="/images/seo-dominican-republic-logo.png" alt="SEO Dominican Republic — Eye To Ad Media" width="200" height="51"></a>
+    <a class="logo" href="/" aria-label="SEO Dominican Republic"><img src="/images/brand/seo-dominican-republic-logo.webp" alt="SEO Dominican Republic — Eye To Ad Media" width="560" height="174"></a>
     <nav class="hnav" aria-label="Main navigation"><a href="/">Home</a><a href="/cuanto-cuesta-el-seo-en-republica-dominicana/">Español</a><a href="/#faq">FAQ</a><a href="/#contact-bottom">Free audit</a><a class="hcall" href="tel:18004818638">1-800-481-8638</a>
       <button type="button" class="mm-btn" id="mm-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mm-panel"><span></span><span></span><span></span></button>
     </nav>
